@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Golf Wind Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>🏌️‍♂️ Golf Wind Calculator</h1>
+        <form id="golf-form">
+            <label for="club">Hůl:</label>
+            <select id="club">
+                <option value="PW">PW</option>
+                <option value="9i">9 iron</option>
+                <option value="8i">8 iron</option>
+                <option value="7i">7 iron</option>
+                <option value="6i">6 iron</option>
+                <option value="5i">5 iron</option>
+                <option value="4i">4 iron</option>
+                <option value="3i">3 iron</option>
+            </select>
+
+            <label for="windSpeed">Rychlost větru (km/h):</label>
+            <input type="number" id="windSpeed" />
+
+            <label for="windDirection">Směr větru vůči hráči (°):</label>
+            <input type="number" id="windDirection" placeholder="0 = proti, 180 = po větru" />
+
+            <button type="submit">Vypočítat</button>
+        </form>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
